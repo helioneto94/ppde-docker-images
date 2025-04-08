@@ -1,0 +1,8 @@
+services:
+  web:
+    image: helioneto94/nginx-desafio02:latest
+    ports:
+      - "8080:8000"
+    build:
+      context: .
+      dockerfile: Dockerfile
