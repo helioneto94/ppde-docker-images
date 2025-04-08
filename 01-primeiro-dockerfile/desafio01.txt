@@ -1,0 +1,20 @@
+A Rota42 possui uma página institucional e atualmente, essa página é hospedada em um servidor e precisa agora ser criado uma imagem Docker para depois migrar para um cluster Kubernetes.
+
+A página é uma simples página estática e deve ser executada em uma imagem base com NGINX.
+
+https://drive.google.com/file/d/1LwGN1E7M71yzfLMfWyTYF6S6JTaWbxAq/view?usp=drive_link
+
+Missão:
+
+Criar um Dockerfile que:
+    - Copie o conteúdo da página institucional para a imagem.
+    - Crie a imagem de forma que seja a de menor tamanho possível
+
+Adicionar um arquivo docker compose que:
+    - Execute um container com a imagem mapeando a porta 8080 da máquina local
+    - Tenha a possibilidade de fazer o build da imagem com o comando docker compose build
+
+Entrega:
+
+Arquivo Dockerfile.
+Arquivo compose.yaml

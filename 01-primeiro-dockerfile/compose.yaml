@@ -1,0 +1,8 @@
+services:
+  web:
+    image: nginx-desafio01:latest
+    ports:
+      - "8080:80"
+    build:
+      context: .
+      dockerfile: Dockerfile
