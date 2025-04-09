@@ -1,0 +1,13 @@
+services:
+  web:
+    image: helioneto94/docker-images-desafio03:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    # Definição dos parametros de entrada
+    # 1º parametro: video a ser convertido
+    # 2º parametro: formato de conversão
+    command: ["video2.mp4", "3gp"]
+
+    # docker container run helioneto94/docker-images-desafio03:latest video2.mp4 3gp
