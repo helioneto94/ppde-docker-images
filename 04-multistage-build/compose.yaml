@@ -8,6 +8,6 @@ services:
     # Definição dos parametros de entrada
     # 1º parametro: video a ser convertido
     # 2º parametro: formato de conversão
-    command: ["video2.mp4", "3gp"]
+    command: ["video.mp4", "gif"]
 
-    # docker container run helioneto94/docker-images-desafio03:latest video2.mp4 3gp
+    # docker container run helioneto94/docker-images-desafio04:latest video2.mp4 avi
