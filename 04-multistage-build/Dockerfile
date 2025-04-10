@@ -2,12 +2,10 @@
 # # eu optei por criar um diretório /videos onde inseri dois videos de teste. Esse diretorio é copiado para a imagem na hora do build
  
 FROM golang:1.24.2 as build
-# RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y ffmpeg
 WORKDIR /build
 COPY convert.go .
 COPY go.mod .
 COPY go.sum .
-# RUN go mod tidy
 RUN go mod download
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main .
 
