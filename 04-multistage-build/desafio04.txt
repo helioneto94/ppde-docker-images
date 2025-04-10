@@ -1,0 +1,18 @@
+A Rota42 está melhorando sua solução de processamento de vídeos e recentemente migrou o código do conversor de vídeos de Shell Script para Golang, buscando desempenho e flexibilidade.
+
+Agora, o próximo passo é containerizar essa aplicação de forma eficiente. Atualmente, o time de desenvolvimento criou um Dockerfile simples, mas a imagem gerada está muito grande, pois inclui pacotes de desenvolvimento que não são necessários em produção.
+
+Seu desafio é refatorar a criação da imagem utilizando Multistage Build, garantindo que a imagem final seja leve e eficiente.
+
+Missão:
+
+Criar um Dockerfile otimizado utilizando Multistage Build, garantindo que:
+A imagem seja a menor possível e garantindo todas as funcionalidades.
+O contêiner aceite parâmetros dinâmicos para conversão de vídeos.
+Criar um compose.yaml que:
+Construa a imagem otimizando o processo de build.
+Permita rodar o contêiner de forma simples.
+Entrega:
+
+Arquivo Dockerfile utilizando Multistage Build.
+Arquivo compose.yaml para facilitar a execução.
